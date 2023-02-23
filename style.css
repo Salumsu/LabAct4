@@ -134,3 +134,21 @@ h3 {
 .section .container .image img {
   width: 100%;
 }
+
+.table {
+  display: grid;
+  place-items: center;
+}
+
+.table table {
+  width: 50%;
+}
+
+.table :is(table, td, th) {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-collapse: collapse;
+}
+
+.table :is(td, th) {
+  padding: 0.2rem 0.5rem;
+}
